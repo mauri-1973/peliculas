@@ -1,10 +1,21 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @client %>
 
-<div>
-  <%= link_to "Edit this client", edit_client_path(@client) %> |
-  <%= link_to "Back to clients", clients_path %>
 
-  <%= button_to "Destroy this client", @client, method: :delete %>
+<div class="card col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <div class="card-body">
+    <h5 class="card-title">Name Client</h5><p><%= @client.name %></p>
+    <h5 class="card-title">Age Client</h5><p><%= @client.age %></p>
+    <h5 class="card-title">Rent movie</h5>
+    <p><% if @client.movies.last != nil %>
+      <%= @client.movies.last %>
+    <% else %>
+      No rented movies
+    <% end %></p>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <%= link_to "Edit this client", edit_client_path(@client) , class:"btn btn-primary btn-sm m-1" %>
+    <%= button_to "Destroy this movie", @client, method: :delete, class:"btn btn-primary btn-sm m-1" %>
+    <%= link_to "Back to movies", clients_path, class:"btn btn-primary btn-sm m-1" %>
+    </div>
+  </div>
 </div>

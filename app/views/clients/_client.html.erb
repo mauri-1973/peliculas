@@ -3,9 +3,15 @@
     <th scope="row"></th>
     <td><%= client.name %></td>
     <td><%= client.age %></td>
-    <td><%= client.movies.last %></td>
-    <td><%= link_to "Show this client", client %></td>
-    <td><%= link_to "Edit this client", edit_client_path(client) %></td>
-    <td><%= button_to "Destroy this client", @client, method: :delete %></td>
+    <td>
+    <% if client.movies.last != nil %>
+      <%= client.movies.last %>
+    <% else %>
+      No rented movies
+    <% end %>
+    </td>
+    <td><%= link_to "Show this client", client, class:"btn btn-primary btn-sm mt-2" %></td>
+    <td><%= link_to "Edit this client", edit_client_path(client), class:"btn btn-primary btn-sm mt-2" %></td>
+    <td><%= button_to "Destroy this client", @client, method: :delete, class:"btn btn-primary btn-sm mt-2" %></td>
   </tr>
 </div>

@@ -10,18 +10,18 @@
       </ul>
     </div>
   <% end %>
+   
+  <div class="form-group">
+    <%= form.label 'Movie Name', style: "display: block" %>
+    <%= form.text_field :name, class:"form-control" %>
+  </div>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="form-group">
+    <%= form.label 'Client', style: "display: block" %>
+    <%= form.select :client_id, options_for_select(@clients, @movie.client_id), {}, { class: 'form-control' } %>
   </div>
 
   <div>
-    <%= form.label :client_id, style: "display: block" %>
-    <%= form.select :client_id, options_for_select(@clients) %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit "Submit", class:"btn btn-success btn-sm mt-2" %>
   </div>
 <% end %>

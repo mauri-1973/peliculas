@@ -1,10 +1,11 @@
 <h1>Editing client</h1>
-
-<%= render "form", client: @client %>
-
-<br>
-
-<div>
-  <%= link_to "Show this client", @client %> |
-  <%= link_to "Back to clients", clients_path %>
+<div class="card col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <div class="card-body">
+    <%= render "form", client: @client %>
+    <br>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <%= link_to "Show this client", @client, class:"btn btn-primary btn-sm m-1" %>
+      <%= link_to "Back to clients", clients_path, class:"btn btn-primary btn-sm m-1" %>
+    </div>
+  </div>
 </div>

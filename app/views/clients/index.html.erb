@@ -1,9 +1,14 @@
+<style>
+.justify-content-between{
+  padding: 5px !important;
+}
+</style>
 <p style="color: green"><%= notice %></p>
 
 <div class="container">
   <h1>Clients</h1>
 
-  <%= link_to "New client", new_client_path %>
+  <%= link_to "New client", new_client_path, class:"btn btn-sm btn-primary" %>
 
   <div id="clients table-responsive">
     <table class="table table-bordered display responsive nowrap" style="width:100%" id="tablainicial" >
@@ -30,7 +35,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 });
-    const tablesel2 = $('#tablainicial').DataTable({
+    var tablesel2 = $('#tablainicial').DataTable({
         responsive: true,   
         "pageLength": 5,
         "fixedHeader": true,    
