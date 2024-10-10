@@ -27,3 +27,5 @@ Pasos seguidos para estabilizar la plataforma:
 [Descripción de la imagen](imagenes/6.png)
 [Descripción de la imagen](imagenes/7.png)
 [Descripción de la imagen](imagenes/8.png)
+<image src="/imagenes/1.png" alt="Descripción de la imagen">
+
