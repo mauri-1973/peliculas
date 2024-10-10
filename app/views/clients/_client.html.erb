@@ -12,6 +12,6 @@
     </td>
     <td><%= link_to "Show this client", client, class:"btn btn-primary btn-sm mt-2" %></td>
     <td><%= link_to "Edit this client", edit_client_path(client), class:"btn btn-primary btn-sm mt-2" %></td>
-    <td><%= button_to "Destroy this client", @client, method: :delete, class:"btn btn-primary btn-sm mt-2" %></td>
+    <td><%= button_to "Destroy this client", @client, method: :delete, class:"btn btn-primary btn-sm mt-2", data: { confirm: '¿Estás seguro?' }  %></td>
   </tr>
 </div>
