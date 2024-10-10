@@ -19,11 +19,11 @@ Pasos seguidos para estabilizar la plataforma:
 
 * Aplicar modificaciones al css, respecto a formularios y tablas
 
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/1.png)
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/2.png)
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/3.png)
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/4.png)
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/5.png)
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/6.png)
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/7.png)
-[Descripción de la imagen](https://github.com/mauri-1973/peliculas/blob/main/imagenes/8.png)
+[Descripción de la imagen](/imagenes/1.png)
+[Descripción de la imagen](imagenes/2.png)
+[Descripción de la imagen](imagenes/3.png)
+[Descripción de la imagen](imagenes/4.png)
+[Descripción de la imagen](imagenes/5.png)
+[Descripción de la imagen](imagenes/6.png)
+[Descripción de la imagen](imagenes/7.png)
+[Descripción de la imagen](imagenes/8.png)
