@@ -1,0 +1,53 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+  <h1>Clients</h1>
+
+  <%= link_to "New client", new_client_path %>
+
+  <div id="clients table-responsive">
+    <table class="table table-bordered display responsive nowrap" style="width:100%" id="tablainicial" >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Movie</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @clients.each do |client| %>
+          <%= render client %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+    const tablesel2 = $('#tablainicial').DataTable({
+        responsive: true,   
+        "pageLength": 5,
+        "fixedHeader": true,    
+        "order": [[ 2, "desc" ]],
+        rowReorder: {
+            selector: 'td:nth-child(2)',
+        }
+    });
+    tablesel2.on('order.dt search.dt', function () {
+    let i = 1;
+
+    tablesel2
+        .cells(null, 0, { search: 'applied', order: 'applied' })
+        .every(function (cell) {
+            this.data(i++);
+        });
+    })
+    .draw();
+        
+</script>
