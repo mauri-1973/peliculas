@@ -3,11 +3,46 @@
 <div class="container">
   <h1>Movies</h1>
   <%= link_to "New movie", new_movie_path %>
-  <div id="movies">
-    <div class="row">
+
+  <div id="clients table-responsive">
+    <table class="table table-bordered display responsive nowrap" style="width:100%" id="tablainicial" >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
       <% @movies.each do |movie| %>
         <%= render movie %>
       <% end %>
-    </div>
+      </tbody>
+    </table>
   </div>
 </div>
+<script>
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+    const tablesel2 = $('#tablainicial').DataTable({
+        responsive: true,   
+        "pageLength": 10,
+        "fixedHeader": true,    
+        "order": [[ 1, "desc" ]],
+        rowReorder: {
+            selector: 'td:nth-child(2)',
+        }
+    });
+    tablesel2.on('order.dt search.dt', function () {
+    let i = 1;
+
+    tablesel2
+        .cells(null, 0, { search: 'applied', order: 'applied' })
+        .every(function (cell) {
+            this.data(i++);
+        });
+    })
+    .draw();
+        
+</script>

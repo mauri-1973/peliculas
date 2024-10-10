@@ -1,9 +1,7 @@
-
-  <div class="col-4 py-2">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title"><%= movie.name %></h5>
-        <%= link_to "Show this movie", movie, class: "btn btn-primary" %>
-      </div>
-    </div>
-  </div>
+<div id="<%= dom_id movie %>">
+  <tr>
+    <th scope="row"></th>
+    <td><%= movie.name %></td>
+    <td class="text-center"><%= link_to "Show this movie", movie, class: "btn btn-primary" %></td>
+  </tr>
+</div>
