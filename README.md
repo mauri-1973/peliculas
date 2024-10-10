@@ -19,13 +19,13 @@ Pasos seguidos para estabilizar la plataforma:
 
 * Aplicar modificaciones al css, respecto a formularios y tablas
 
-[Descripción de la imagen](/imagenes/1.png)
-[Descripción de la imagen](imagenes/2.png)
-[Descripción de la imagen](imagenes/3.png)
-[Descripción de la imagen](imagenes/4.png)
-[Descripción de la imagen](imagenes/5.png)
-[Descripción de la imagen](imagenes/6.png)
-[Descripción de la imagen](imagenes/7.png)
-[Descripción de la imagen](imagenes/8.png)
+
 <image src="/imagenes/1.png" alt="Descripción de la imagen">
+<image src="/imagenes/2.png" alt="Descripción de la imagen">
+<image src="/imagenes/3.png" alt="Descripción de la imagen">
+<image src="/imagenes/4.png" alt="Descripción de la imagen">
+<image src="/imagenes/5.png" alt="Descripción de la imagen">
+<image src="/imagenes/6.png" alt="Descripción de la imagen">
+<image src="/imagenes/7.png" alt="Descripción de la imagen">
+<image src="/imagenes/8.png" alt="Descripción de la imagen">
 
