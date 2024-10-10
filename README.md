@@ -18,3 +18,12 @@ Pasos seguidos para estabilizar la plataforma:
 * Acceder a la plataforma localmente
 
 * Aplicar modificaciones al css, respecto a formularios y tablas
+
+[Descripción de la imagen](imagenes/1.png)
+[Descripción de la imagen](imagenes/2.png)
+[Descripción de la imagen](imagenes/3.png)
+[Descripción de la imagen](imagenes/4.png)
+[Descripción de la imagen](imagenes/5.png)
+[Descripción de la imagen](imagenes/6.png)
+[Descripción de la imagen](imagenes/7.png)
+[Descripción de la imagen](imagenes/8.png)
